@@ -14,14 +14,16 @@ class InsertLogToDatabaseJob implements ShouldQueue
 {
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
+    public array $data;
+
     /**
      * Create a new job instance.
      *
      * @return void
      */
-    public function __construct(
-        public array $data,
-    ) {}
+    public function __construct(array $data) {
+        $this->data = $data;
+    }
 
     /**
      * Execute the job.
