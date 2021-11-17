@@ -56,7 +56,7 @@ return [
 ```php
 use Log;
 
-Log::debug('My debug message');
+Log::error('My error message');
 ```
 ## Data Pruning
 
