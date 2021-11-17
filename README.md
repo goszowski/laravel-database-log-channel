@@ -5,7 +5,7 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/goszowski/laravel-database-log-channel.svg?style=flat-square)](https://packagist.org/packages/goszowski/laravel-database-log-channel)
 
 
-The package provides the ability to log in to the database synchronously or asynchronously, along with other logging channels.
+The package provides the ability to write logs into the database synchronously or asynchronously, along with other logging channels.
 
 ## Installation
 
