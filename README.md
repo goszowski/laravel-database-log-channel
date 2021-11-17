@@ -73,7 +73,7 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ## Credits
 
-- [:author_name](https://github.com/goszowski)
+- [goszowski](https://github.com/goszowski)
 - [All Contributors](../../contributors)
 
 ## License
