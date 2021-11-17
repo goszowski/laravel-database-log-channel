@@ -2,9 +2,9 @@
     "name": "goszowski/laravel-database-log-channel",
     "description": "Laravel database log channel",
     "keywords": [
-        ":vendor_name",
+        "goszowski",
         "laravel",
-        ":package_slug"
+        "laravel-database-log-channel"
     ],
     "homepage": "https://github.com/goszowski/laravel-database-log-channel",
     "license": "MIT",
