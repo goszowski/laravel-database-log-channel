@@ -1,7 +1,6 @@
 # Laravel database log channel
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/goszowski/laravel-database-log-channel.svg?style=flat-square)](https://packagist.org/packages/goszowski/laravel-database-log-channel)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/goszowski/laravel-database-log-channel/run-tests?label=tests)](https://github.com/goszowski/laravel-database-log-channel/actions?query=workflow%3Arun-tests+branch%3Amain)
 [![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/goszowski/laravel-database-log-channel/Check%20&%20fix%20styling?label=code%20style)](https://github.com/goszowski/laravel-database-log-channel/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/goszowski/laravel-database-log-channel.svg?style=flat-square)](https://packagist.org/packages/goszowski/laravel-database-log-channel)
 
