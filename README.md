@@ -57,6 +57,19 @@ use Log;
 
 Log::debug('My debug message');
 ```
+## Data Pruning
+
+Without pruning, the logs table can accumulate records very quickly. To mitigate this, you should schedule the telescope:prune Artisan command to run daily:
+
+```php
+$schedule->command('database-logs:prune')->daily();
+```
+
+By default, all entries older than 24 hours will be pruned. You may use the hours option when calling the command to determine how long to retain Logs data. For example, the following command will delete all records created over 48 hours ago:
+
+```php
+$schedule->command('database-logs:prune --hours=48')->daily();
+```
 
 ## Changelog
 
