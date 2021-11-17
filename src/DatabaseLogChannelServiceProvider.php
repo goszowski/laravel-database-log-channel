@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace Goszowski\DatabaseLogChannel;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use VendorName\Skeleton\Commands\SkeletonCommand;
+use Goszowski\DatabaseLogChannel\Commands\DatabaseLogsPruneCommand;
 
-class SkeletonServiceProvider extends PackageServiceProvider
+class DatabaseLogChannelServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -16,10 +16,8 @@ class SkeletonServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('skeleton')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_skeleton_table')
-            ->hasCommand(SkeletonCommand::class);
+            ->name('laravel-database-log-channel')
+            ->hasMigration('create_logs_table')
+            ->hasCommand(DatabaseLogsPruneCommand::class);
     }
 }

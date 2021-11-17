@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "goszowski/laravel-database-log-channel",
+    "description": "Laravel database log channel",
     "keywords": [
         ":vendor_name",
         "laravel",
         ":package_slug"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/goszowski/laravel-database-log-channel",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": ":goszowski",
+            "email": "goszowski@gmail.com",
             "role": "Developer"
         }
     ],
@@ -34,13 +34,12 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Goszowski\\DatabaseLogChannel\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Goszowski\\DatabaseLogChannel\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -54,11 +53,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
-            ],
-            "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
-            }
+                "Goszowski\\DatabaseLogChannel\\DatabaseLogChannelServiceProvider"
+            ]
         }
     },
     "minimum-stability": "dev",
