@@ -35,7 +35,7 @@ return [
 
         // ...
         'database' => [
-            'driver' => 'custom',
+            'driver' => 'monolog',
             'handler' => Goszowski\DatabaseLogChannel\Logging\DatabaseLogHandler::class,
             'via' => Goszowski\DatabaseLogChannel\Logging\DatabaseLogger::class,
 
@@ -44,6 +44,7 @@ return [
             'table' => 'logs',
             'async' => true, // If true, will be sent to the queue
             'queue' => 'default', // Define a queue for asynchronous logging
+            'level' => 'error',
         ],
 
     ],
