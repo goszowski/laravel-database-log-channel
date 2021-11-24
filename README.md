@@ -60,7 +60,7 @@ Log::error('My error message');
 ```
 ## Data Pruning
 
-Without pruning, the logs table can accumulate records very quickly. To mitigate this, you should schedule the telescope:prune Artisan command to run daily:
+Without pruning, the logs table can accumulate records very quickly. To mitigate this, you should schedule the database-logs:prune Artisan command to run daily:
 
 ```php
 $schedule->command('database-logs:prune')->daily();
