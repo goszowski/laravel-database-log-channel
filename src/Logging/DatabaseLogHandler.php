@@ -15,6 +15,7 @@ class DatabaseLogHandler extends AbstractProcessingHandler
     {
         $data = [
             'id' => Str::uuid()->toString(),
+            'app' => config('app.name'),
             'message' => $record['message'],
             'context' => json_encode($record['context']),
             'level' => $record['level'],

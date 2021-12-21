@@ -10,6 +10,7 @@ class CreateLogsTable extends Migration
     {
         Schema::create('logs', function (Blueprint $table) {
             $table->uuid('id')->primary();
+            $table->string('app')->index();
             $table->longText('message');
             $table->longText('context');
             $table->unsignedInteger('level')->index();
